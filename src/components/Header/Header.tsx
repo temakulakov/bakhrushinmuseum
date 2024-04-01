@@ -1,14 +1,13 @@
 import React, {useEffect, useState} from 'react';
 import styles from "./Header.module.scss";
 import {IHeaderColumn} from "../../types";
-import arrow from "../../static/icons/interface/arrow.svg";
+import arrow from "./icons/arrow.svg";
 import { motion} from "framer-motion";
-// import {Col} from "antd";
 
-import BMLogoLeft from "../../static/icons/logo/BMLogoLeft.svg";
-import BMLogoLine from "../../static/icons/logo/BMLogoLine.svg";
-import BMLogoRight from "../../static/icons/logo/BMLogoRight.svg";
-import BMText from "../../static/icons/logo/BMText.svg";
+import BMLogoLeft from "./icons/BMLogoLeft.svg";
+import BMLogoLine from "./icons/BMLogoLine.svg";
+import BMLogoRight from "./icons/BMLogoRight.svg";
+import BMText from "./icons/BMText.svg";
 
 import eye from './icons/eye.svg';
 import search from './icons/search.svg';

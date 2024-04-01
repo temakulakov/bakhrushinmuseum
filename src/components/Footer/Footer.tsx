@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './Footer.module.scss';
-import min from '../../static/icons/img/min.svg'
-import gosuslug from '../../static/icons/interface/gosuslug.svg';
-import cultura from '../../static/icons/interface/cultura.svg';
-import yt from '../../static/icons/interface/yt.svg';
-import rt from '../../static/icons/interface/rt.svg';
-import vk from '../../static/icons/interface/vk.svg';
-import tg from '../../static/icons/interface/tg.svg';
+import min from './static/interface/min.svg';
+import gosuslug from './static/interface/gosuslug.svg';
+import cultura from './static/interface/cultura.svg';
+import yt from './static/interface/yt.svg';
+import rt from './static/interface/rt.svg';
+import vk from './static/interface/vk.svg';
+import tg from './static/interface/tg.svg';
 import {IFooterColumns} from "../../types";
 import Column from "./Column/Column";
 
@@ -54,7 +54,7 @@ const columns: IFooterColumns[] = [
 
 
 const Footer: React.FC = () => {
-    return <>
+    return <div className={styles.wrapper}>
         <div className={styles.container}>
             {
                 columns.map((column, index) => (<Column key={index} column={column}/>))
@@ -68,7 +68,7 @@ const Footer: React.FC = () => {
                 <a href={'https://yandex.ru/maps/-/CDRfbF8C'}>{'ул.Бахрушина 31/12, Москва, 115054'}</a>
             </div>
         </div>
-    </>
+    </div>
 };
 
 export default Footer;

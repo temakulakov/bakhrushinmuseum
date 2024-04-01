@@ -1,6 +1,5 @@
 import styles from "./Column.module.scss";
 import {IFooterColumns} from "../../../types";
-// import {Link} from "@tanstack/react-router";
 
 interface ColumnProps {
     column: IFooterColumns;

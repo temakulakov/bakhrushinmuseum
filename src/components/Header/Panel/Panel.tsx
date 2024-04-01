@@ -2,7 +2,7 @@ import styles from './Panel.module.scss';
 import {IHeaderColumn} from "../../../types";
 import {AnimatePresence, motion} from "framer-motion";
 import {useEffect, useState} from "react";
-import arrow from "../../../static/icons/interface/arrow.svg";
+import arrow from "../icons/arrow.svg";
 // import Line from "../Line/Line.tsx";
 
 
