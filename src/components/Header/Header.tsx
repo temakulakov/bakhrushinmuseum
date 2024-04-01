@@ -19,15 +19,18 @@ const Header: React.FC = () => {
     const [panel, setPanel] = React.useState<IHeaderColumn | null>(null);
     const [isVisible, setIsVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
+    const [ up, setUp] = useState<boolean>(false);
 
     const controlNavbar = () => {
         if (typeof window !== 'undefined') {
             // Скрыть/показать заголовок
             if (window.scrollY > lastScrollY) { // Если прокрутка вниз
                 setIsVisible(false);
+                setUp(false);
             } else { // Если прокрутка вверх
                 if (window.scrollY > 200) {
                     setIsVisible(true);
+                    setUp(true);
                 }
             }
             // Обновить последнюю позицию прокрутки
@@ -47,7 +50,14 @@ const Header: React.FC = () => {
 
     return <>
         <div style={{width: '1470px', }}>
-            <motion.div className={styles.container} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0, backgroundColor: panel ? '#8B1635' : 'rgba(138, 22, 53, 0.69)' }} exit={{ opacity: 0, y: 20 }}>
+            <motion.div className={styles.container}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{
+                            opacity: 1, backgroundColor: panel ? '#8B1635' : 'rgba(138, 22, 53, 0.69)',
+                            width: lastScrollY > 499 ? '90%' : '95%',
+                            // position: lastScrollY > 100 ? 'fixed' : 'absolute',
+                            y: lastScrollY > 100  && !up ? '-110px' : '0' }}
+                        exit={{ opacity: 0, y: 20 }}>
                 <div className={styles.top}>
                     <motion.a className={styles.logoWrapper}>
                         <motion.img

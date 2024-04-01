@@ -8,6 +8,7 @@ import  slider3  from "./images/slider3.jpeg"
 import  slider4  from "./images/slider4.jpeg"
 
 import filials from "./images/filials.png";
+import filials1 from "./images/filias1.png";
 
 
 export interface IData {
