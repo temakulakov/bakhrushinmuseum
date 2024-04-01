@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 
 const Layout = () => (
     <>
-        <header>Шапка сайта</header>
+        <header><p>Шапка сайта</p></header>
         <main>
             <Outlet /> {/* Здесь будут отображаться страницы в зависимости от маршрута */}
         </main>
