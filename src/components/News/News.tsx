@@ -5,13 +5,13 @@ import {INews} from "../../types";
 import dayjs from "dayjs";
 
 const news: INews[] = [
-    { id: 0, title: "Здесь большая белая новость на целых 2 строки", imageUrl: "https://cdn.fstoppers.com/styles/full/s3/media/2019/12/04/nando-jpeg-quality-030.jpg", date: dayjs(), description: "Адрес Новость 1", links: "/", type: "full"},
-    { id: 1, title: "Новость 2", imageUrl: "https://cdn.fstoppers.com/styles/full/s3/media/2019/12/04/nando-jpeg-quality-030.jpg", date: dayjs(), description: "Адрес Новость 2", links: "/", type: "compact"},
-    { id: 2, title: "Новость 3", imageUrl: "https://placehold.jp/515x375.png", date: dayjs(), description: "Адрес Новость 3", links: "/", type: "full"},
-    { id: 3, title: "Новость 4", imageUrl: "https://placehold.jp/515x375.png", date: dayjs(), description: "Адрес Новость 4", links: "/", type: "full"},
-    { id: 4, title: "Новость 5", imageUrl: "https://placehold.jp/515x375.png", date: dayjs(), description: "Адрес Новость 5", links: "/", type: "full"},
-    { id: 5, title: "Новость 6", imageUrl: "https://placehold.jp/515x375.png", date: dayjs(), description: "Адрес Новость 6", links: "/", type: "compact"},
-    { id: 6, title: "Новость 7", imageUrl: "https://placehold.jp/515x375.png", date: dayjs(), description: "Адрес Новость 7", links: "/", type: "full"},
+    { id: 0, title: "Здесь большая белая новость на целых 2 строки", imageUrl: "https://cdn.fstoppers.com/styles/full/s3/media/2019/12/04/nando-jpeg-quality-030.jpg", date: dayjs(), description: "Адрес Новость 1", link: "/", type: "full"},
+    { id: 1, title: "Новость 2", imageUrl: "https://cdn.fstoppers.com/styles/full/s3/media/2019/12/04/nando-jpeg-quality-030.jpg", date: dayjs(), description: "Адрес Новость 2", link: "/", type: "compact"},
+    { id: 2, title: "Новость 3", imageUrl: "https://placehold.jp/515x375.png", date: dayjs(), description: "Адрес Новость 3", link: "/", type: "full"},
+    { id: 3, title: "Новость 4", imageUrl: "https://placehold.jp/515x375.png", date: dayjs(), description: "Адрес Новость 4", link: "/", type: "full"},
+    { id: 4, title: "Новость 5", imageUrl: "https://placehold.jp/515x375.png", date: dayjs(), description: "Адрес Новость 5", link: "/", type: "full"},
+    { id: 5, title: "Новость 6", imageUrl: "https://placehold.jp/515x375.png", date: dayjs(), description: "Адрес Новость 6", link: "/", type: "compact"},
+    { id: 6, title: "Новость 7", imageUrl: "https://placehold.jp/515x375.png", date: dayjs(), description: "Адрес Новость 7", link: "/", type: "full"},
 ];
 
 const News = () => {
@@ -24,7 +24,7 @@ const News = () => {
             description={newsItem.description}
             date={newsItem.date}
             image={newsItem.imageUrl}
-            href={newsItem.links}
+            href={newsItem.link}
             view={newsItem.type}
         /> : <NewsElement
             key={newsItem.id}
@@ -32,7 +32,7 @@ const News = () => {
             description={newsItem.description}
             date={newsItem.date}
             image={newsItem.imageUrl}
-            href={newsItem.links}
+            href={newsItem.link}
             view={newsItem.type}
         />
     ));
@@ -44,7 +44,7 @@ const News = () => {
             description={newsItem.description}
             date={newsItem.date}
             image={newsItem.imageUrl}
-            href={newsItem.links}
+            href={newsItem.link}
             view={newsItem.type}
         /> : <NewsElement
             key={newsItem.id}
@@ -52,7 +52,7 @@ const News = () => {
             description={newsItem.description}
             date={newsItem.date}
             image={newsItem.imageUrl}
-            href={newsItem.links}
+            href={newsItem.link}
             view={newsItem.type}
         />
     ));

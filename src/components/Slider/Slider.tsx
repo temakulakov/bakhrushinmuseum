@@ -9,6 +9,7 @@ import  slider4  from "./images/slider4.jpeg"
 
 import filials from "./images/filials.png";
 import filials1 from "./images/filias1.png";
+import {useLocation} from "react-router-dom";
 
 
 export interface IData {
@@ -91,6 +92,7 @@ const Slider = () => {
     const [progress, setProgress] = useState(0);
     const [slider, setSlider] = useState<IData>(data[0]);
     const [direction, setDirection] = useState<"left" | "right">("right");
+    const location = useLocation();
 
     const sliderrs  = [
         <motion.div
@@ -99,11 +101,13 @@ const Slider = () => {
                 top: 0,
                 left: 0,
                 width: '100%',
-                height: '100%',
+                // height: '100%',
                 overflow: 'hidden',
             }}
             initial={{opacity: 1, x: direction === 'right' ? -440 : 440}}
-            animate={{opacity: 1, x: 0}}
+            animate={{opacity: 1, x: 0,
+                // height: location.pathname === '/' ? '100%' : 0
+        }}
             exit={{opacity: 1, x: direction === 'right' ? 440 : -440}}
             transition={{
                 x: { type: "easy" },
@@ -231,19 +235,23 @@ const Slider = () => {
             </div>
         </motion.div>,
     ]
-    const [ hover, setHover ] = useState(false)
-    return <div
+    const [ hover, setHover ] = useState(false);
+
+
+
+    return <motion.div
         className={styles.root}
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
+        animate={{height: location.pathname === '/' ? '70vh' : '40vh'}}
     >
         <AnimatePresence>
             {
-                hover && <>
+                 hover && <>
                     <motion.div
-                        initial={{ opacity: 0, transform: 'translateX(-50%)' }}
-                        animate={{ opacity: 1, transform: 'translateX(0)' }}
-                        exit={{ opacity: 0, transform: 'translateX(-50%)' }}
+                        initial={{opacity: 0, transform: 'translateX(-50%)'}}
+                        animate={{opacity: 1, transform: 'translateX(0)'}}
+                        exit={{opacity: 0, transform: 'translateX(-50%)'}}
 
                         onClick={() => {
                             setDirection('left');
@@ -258,7 +266,8 @@ const Slider = () => {
                         className={styles.controlsLeft}
                         style={{marginLeft: "20px"}}
                     >
-                        <svg style={{transform: 'rotate(90deg)'}} xmlns="http://www.w3.org/2000/svg" width="27px" height="27px"
+                        <svg style={{transform: 'rotate(90deg)'}} xmlns="http://www.w3.org/2000/svg" width="27px"
+                             height="27px"
                              fill="none"
                              stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                              viewBox="0 0 24 24">
@@ -266,9 +275,9 @@ const Slider = () => {
                         </svg>
                     </motion.div>
                     <motion.div
-                        initial={{ opacity: 0, transform: 'translateX(50%)' }}
-                        animate={{ opacity: 1, transform: 'translateX(0)' }}
-                        exit={{ opacity: 0, transform: 'translateX(50%)' }}
+                        initial={{opacity: 0, transform: 'translateX(50%)'}}
+                        animate={{opacity: 1, transform: 'translateX(0)'}}
+                        exit={{opacity: 0, transform: 'translateX(50%)'}}
                         onClick={() => {
                             setDirection('right');
 
@@ -283,7 +292,8 @@ const Slider = () => {
                         }
                         className={styles.controlsLeft}
                         style={{right: 0, marginRight: "20px"}}>
-                        <svg style={{transform: 'rotate(270deg)'}} xmlns="http://www.w3.org/2000/svg" width="27px" height="27px"
+                        <svg style={{transform: 'rotate(270deg)'}} xmlns="http://www.w3.org/2000/svg" width="27px"
+                             height="27px"
                              fill="none"
                              stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                              viewBox="0 0 24 24">
@@ -295,19 +305,24 @@ const Slider = () => {
         </AnimatePresence>
 
         {
-            sliderrs[slider.id]
+            location.pathname === '/' && sliderrs[slider.id]
         }
 
-        <div className={styles.imageContainer}>
+        <motion.div className={styles.imageContainer}
+                    animate={{height: location.pathname === '/' ? '70vh' : '40vh', x: location.pathname === '/' ? '1%' : '80%'}}
+        >
             <motion.img
                 draggable="false"
-                initial={{opacity: 0, y: 110}}
+                initial={{opacity: 0, y: 0}}
+                // initial={{opacity: 0, y: 110}}
                 animate={{opacity: 1, y: 0}}
+                // animate={{opacity: 1, y: 0}}
                 src={filials}
                 className={styles.image}
+                // transition={{ type: 'inertia', stiffness: 300, damping: 30 }}
             />
-        </div>
-    </div>
+        </motion.div>
+    </motion.div>
 };
 
 export default Slider;

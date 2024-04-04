@@ -13,6 +13,7 @@ import eye from './icons/eye.svg';
 import search from './icons/search.svg';
 import translate from './icons/translate.svg';
 import Panel from "./Panel/Panel";
+import {Link} from "react-router-dom";
 
 
 const Header: React.FC = () => {
@@ -49,7 +50,7 @@ const Header: React.FC = () => {
     }, [lastScrollY]);
 
     return <>
-        <div style={{width: '1470px', }}>
+        <div style={{width: '1470px' }}>
             <motion.div className={styles.container}
                         initial={{ opacity: 0, y: 20 }}
                         animate={{
@@ -59,7 +60,7 @@ const Header: React.FC = () => {
                             y: lastScrollY > 100  && !up ? '-110px' : '0' }}
                         exit={{ opacity: 0, y: 20 }}>
                 <div className={styles.top}>
-                    <motion.a className={styles.logoWrapper}>
+                    <Link to={'/'} className={styles.logoWrapper}>
                         <motion.img
                             initial={{opacity: 0, x: 30}}
                             animate={{opacity: 1, x: 0}}
@@ -89,7 +90,7 @@ const Header: React.FC = () => {
                             alt="BMText"
                             draggable={false}
                         />
-                    </motion.a>
+                    </Link>
                     <div className={styles.btnGroup}>
                         <button className={styles.btn}>{"Магазин"}</button>
                         <button className={styles.btn}>{"Купить билет"}</button>
@@ -113,7 +114,7 @@ const Header: React.FC = () => {
                         key={index}
                         onMouseEnter={() => setPanel(item)}
                     >
-                        {item.head.title}{item.links && <img src={arrow}/>}
+                        {item.head.title}{item.link && <img src={arrow}/>}
                     </a>))}
                     {panel && <Panel panel={panel}/>}
                 </div>
@@ -131,7 +132,7 @@ const menu: IHeaderColumn[] = [
             title: "Посетителям",
             src: "",
             description: "Краткая и общая информация ( фото музея, адрес и часы работы, билеты, о музее, как добраться ) + разводная с разделами"
-        }, links: [
+        }, link: [
             {
                 head: {
                     title: "Здания и часы работы",
@@ -184,11 +185,11 @@ const menu: IHeaderColumn[] = [
         ]
     },
     {
-        head: {title: "Выставки и события", src: "", description: "Разводная страница с разделами."}, links: [
+        head: {title: "Выставки и события", src: "", description: "Разводная страница с разделами."}, link: [
             {
                 head: {
                     title: "Выставки", src: "", description: ""
-                }, links: [
+                }, link: [
                     {
                         head: {
                             title: "Ближайшая выставка #1",
@@ -216,7 +217,7 @@ const menu: IHeaderColumn[] = [
                 head: {
                     title: "Постоянные экспозиции", src: "", description: ""
                 },
-                links: [
+                link: [
                     {
                         head: {
                             title: "Постоянная экспозиция #1",
@@ -246,7 +247,7 @@ const menu: IHeaderColumn[] = [
                     src: "https://www.gctm.ru/wp-content/uploads/2019/01/IMG_6827-e1547123113206.jpg",
                     description: "Страница со всеми Событиями, внутри разделение на разные события, на первом этапе: 1.текущие, 2. будущее, 3. архив",
                 },
-                links: [
+                link: [
                     {
                         head: {
                             title: "Событие #1",
@@ -294,7 +295,7 @@ const menu: IHeaderColumn[] = [
         ]
     },
     {
-        head: {title: "Узнавайте сами", src: "", description: "Разводная страница с разделами."}, links: [
+        head: {title: "Узнавайте сами", src: "", description: "Разводная страница с разделами."}, link: [
             {
                 head: {
                     title: "Лекторий \"Бахрушинская академия\"",
@@ -339,7 +340,7 @@ const menu: IHeaderColumn[] = [
         ]
     },
     {
-        head: {title: "Бахрушинский детям", src: "", description: "Разводная страница с разделами."}, links: [
+        head: {title: "Бахрушинский детям", src: "", description: "Разводная страница с разделами."}, link: [
             {
                 head: {
                     title: "Детский центр",
@@ -378,7 +379,7 @@ const menu: IHeaderColumn[] = [
         }
     },
     {
-        head: {title: "Бахрушинский онлайн", src: "", description: "Разводная страница с разделами."}, links: [
+        head: {title: "Бахрушинский онлайн", src: "", description: "Разводная страница с разделами."}, link: [
             {head: {title: "ГОРОД | ТЕАТР", src: "", description: ""}},
             {head: {title: "Виртуальные туры", src: "", description: ""}},
             {head: {title: "Лекции онлайн", src: "", description: ""}},
@@ -391,7 +392,7 @@ const menu: IHeaderColumn[] = [
         ]
     },
     {
-        head: {title: "Про театр", src: "", description: "Разводная страница с разделами."}, links: [
+        head: {title: "Про театр", src: "", description: "Разводная страница с разделами."}, link: [
             {head: {title: "Театральные музеи и Архивы", src: "", description: "Переход на сайт-сателлит"}},
             {
                 head: {
@@ -407,7 +408,7 @@ const menu: IHeaderColumn[] = [
         ]
     },
     {
-        head: {title: "Поддержать музей", src: "", description: "Разводная страница с разделами."}, links: [
+        head: {title: "Поддержать музей", src: "", description: "Разводная страница с разделами."}, link: [
             {head: {title: "Сделать пожертвование", src: "", description: "Переход на сайт-сателлит"}},
             {
                 head: {

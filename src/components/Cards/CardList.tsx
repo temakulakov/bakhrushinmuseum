@@ -14,56 +14,56 @@ import exp4 from './static/expositions/exp4.jpg'
 
 
 const events: IEvent[] = [
-    { id: 0, title: "Событие 1", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес события 1", links: ""},
-    { id: 1, title: "Событие 2", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес события 2", links: ""},
-    { id: 2, title: "Событие 3", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес события 3", links: ""},
-    { id: 3, title: "Событие 4", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес события 4", links: ""},
-    { id: 4, title: "Событие 5", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес события 5", links: ""},
-    { id: 5, title: "Событие 6", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес события 6", links: ""},
-    { id: 6, title: "Событие 7", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес события 7", links: ""},
+    { id: 0, title: "Событие 1", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес события 1", link: "ticket/"},
+    { id: 1, title: "Событие 2", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес события 2", link: "ticket/"},
+    { id: 2, title: "Событие 3", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес события 3", link: "ticket/"},
+    { id: 3, title: "Событие 4", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес события 4", link: "ticket/"},
+    { id: 4, title: "Событие 5", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес события 5", link: "ticket/"},
+    { id: 5, title: "Событие 6", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес события 6", link: "ticket/"},
+    { id: 6, title: "Событие 7", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес события 7", link: "ticket/"},
 ];
 
 const excursions: IExcursions[] = [
-    { id: 0, title: "Экскурсия 1", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес экскурсии 1", links: "/"},
-    { id: 1, title: "Экскурсия 2", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес экскурсии 2", links: "/"},
-    { id: 2, title: "Экскурсия 3", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес экскурсии 3", links: "/"},
-    { id: 3, title: "Экскурсия 4", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес экскурсии 4", links: "/"},
-    { id: 4, title: "Экскурсия 5", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес экскурсии 5", links: "/"},
-    { id: 5, title: "Экскурсия 6", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес экскурсии 6", links: "/"},
-    { id: 6, title: "Экскурсия 7", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес экскурсии 7", links: "/"},
+    { id: 0, title: "Экскурсия 1", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес экскурсии 1", link: "/ticket"},
+    { id: 1, title: "Экскурсия 2", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес экскурсии 2", link: "/ticket"},
+    { id: 2, title: "Экскурсия 3", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес экскурсии 3", link: "/ticket"},
+    { id: 3, title: "Экскурсия 4", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес экскурсии 4", link: "/ticket"},
+    { id: 4, title: "Экскурсия 5", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес экскурсии 5", link: "/ticket"},
+    { id: 5, title: "Экскурсия 6", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес экскурсии 6", link: "/ticket"},
+    { id: 6, title: "Экскурсия 7", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес экскурсии 7", link: "/ticket"},
 ];
 
 const exhibitions: IExhibition[] = [
-    { id: 0, title: "Выставка 1", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес выставки 1", links: "/"},
-    { id: 1, title: "Выставка 2", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес выставки 2", links: "/"},
-    { id: 2, title: "Выставка 3", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес выставки 3", links: "/"},
-    { id: 3, title: "Выставка 4", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес выставки 4", links: "/"},
-    { id: 4, title: "Выставка 5", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес выставки 5", links: "/"},
-    { id: 5, title: "Выставка 6", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес выставки 6", links: "/"},
-    { id: 6, title: "Выставка 7", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес выставки 7", links: "/"},
+    { id: 0, title: "Выставка 1", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес выставки 1", link: "/ticket"},
+    { id: 1, title: "Выставка 2", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес выставки 2", link: "/ticket"},
+    { id: 2, title: "Выставка 3", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес выставки 3", link: "/ticket"},
+    { id: 3, title: "Выставка 4", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес выставки 4", link: "/ticket"},
+    { id: 4, title: "Выставка 5", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес выставки 5", link: "/ticket"},
+    { id: 5, title: "Выставка 6", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес выставки 6", link: "/ticket"},
+    { id: 6, title: "Выставка 7", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес выставки 7", link: "/ticket"},
 ];
 
 const expositions: IExposition[] = [
-    { id: 0, title: "«Семья Бахрушиных и залог счастливой жизни». 12+", imageUrl: exp1, duration: {from: dayjs(), to: dayjs()}, position: "Москва, улица Бахрушина, 31/12с1", links: "/", type: "Про"},
-    { id: 1, title: "Экспозиции 2", imageUrl: exp2, duration: {from: dayjs(), to: dayjs()}, position: "Адрес экспозиции 2", links: "/", type: "Про"},
-    { id: 2, title: "Экспозиции 3", imageUrl: exp3, duration: {from: dayjs(), to: dayjs()}, position: "Адрес экспозиции 3", links: "/", type: "Про"},
-    { id: 3, title: "Экспозиции 4", imageUrl: exp4, duration: {from: dayjs(), to: dayjs()}, position: "Адрес экспозиции 4", links: "/", type: "Про"},
-    { id: 4, title: "Экспозиции 5", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес экспозиции 5", links: "/", type: "Про"},
-    { id: 5, title: "Экспозиции 6", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес экспозиции 6", links: "/", type: "Про"},
-    { id: 6, title: "Экспозиции 7", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес экспозиции 7", links: "/", type: "Про"},
+    { id: 0, title: "«Семья Бахрушиных и залог счастливой жизни». 12+", imageUrl: exp1, duration: {from: dayjs(), to: dayjs()}, position: "Москва, улица Бахрушина, 31/12с1", link: "/ticket", type: "Про"},
+    { id: 1, title: "Экспозиции 2", imageUrl: exp2, duration: {from: dayjs(), to: dayjs()}, position: "Адрес экспозиции 2", link: "/ticket", type: "Про"},
+    { id: 2, title: "Экспозиции 3", imageUrl: exp3, duration: {from: dayjs(), to: dayjs()}, position: "Адрес экспозиции 3", link: "/ticket", type: "Про"},
+    { id: 3, title: "Экспозиции 4", imageUrl: exp4, duration: {from: dayjs(), to: dayjs()}, position: "Адрес экспозиции 4", link: "/ticket", type: "Про"},
+    { id: 4, title: "Экспозиции 5", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес экспозиции 5", link: "/ticket", type: "Про"},
+    { id: 5, title: "Экспозиции 6", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес экспозиции 6", link: "/ticket", type: "Про"},
+    { id: 6, title: "Экспозиции 7", imageUrl: "https://placehold.jp/515x375.png", duration: {from: dayjs(), to: dayjs()}, position: "Адрес экспозиции 7", link: "/ticket", type: "Про"},
 ];
 
 interface IType {
     id: number;
     title: string;
-    links: string;
+    link: string;
 }
 
 const types: IType[] = [
-    { id: 0, title: "Выставки", links: "" },
-    { id: 1, title: "Экспозиции", links: "" },
-    { id: 2, title: "События", links: "" },
-    { id: 3, title: "Экскурсии", links: "" },
+    { id: 0, title: "Выставки", link: "ticket/" },
+    { id: 1, title: "Экспозиции", link: "ticket/" },
+    { id: 2, title: "События", link: "ticket/" },
+    { id: 3, title: "Экскурсии", link: "ticket/" },
 ];
 
 const CardList: React.FC = () => {

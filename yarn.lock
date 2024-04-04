@@ -9206,7 +9206,7 @@ resolve@^1.1.7, resolve@^1.10.0, resolve@^1.14.2, resolve@^1.19.0, resolve@^1.20
   dependencies:
     is-core-module "^2.13.0"
     path-parse "^1.0.7"
-    supports-preserve-symlinks-flag "^1.0.0"
+    supports-preserve-symlink-flag "^1.0.0"
 
 resolve@^2.0.0-next.5:
   version "2.0.0-next.5"
@@ -9215,7 +9215,7 @@ resolve@^2.0.0-next.5:
   dependencies:
     is-core-module "^2.13.0"
     path-parse "^1.0.7"
-    supports-preserve-symlinks-flag "^1.0.0"
+    supports-preserve-symlink-flag "^1.0.0"
 
 retry@^0.12.0:
   version "0.12.0"
@@ -10014,17 +10014,17 @@ supports-color@^8.0.0:
   dependencies:
     has-flag "^4.0.0"
 
-supports-hyperlinks@^2.0.0:
+supports-hyperlink@^2.0.0:
   version "2.3.0"
-  resolved "https://registry.yarnpkg.com/supports-hyperlinks/-/supports-hyperlinks-2.3.0.tgz#3943544347c1ff90b15effb03fc14ae45ec10624"
+  resolved "https://registry.yarnpkg.com/supports-hyperlink/-/supports-hyperlink-2.3.0.tgz#3943544347c1ff90b15effb03fc14ae45ec10624"
   integrity sha512-RpsAZlpWcDwOPQA22aCH4J0t7L8JmAvsCxfOSEwm7cQs3LshN36QaTkwd70DnBOXDWGssw2eUoc8CaRWT0XunA==
   dependencies:
     has-flag "^4.0.0"
     supports-color "^7.0.0"
 
-supports-preserve-symlinks-flag@^1.0.0:
+supports-preserve-symlink-flag@^1.0.0:
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
+  resolved "https://registry.yarnpkg.com/supports-preserve-symlink-flag/-/supports-preserve-symlink-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
 suspend-react@^0.1.3:
@@ -10145,7 +10145,7 @@ terminal-link@^2.0.0:
   integrity sha512-un0FmiRUQNr5PJqy9kP7c40F5BOfpGlYTrxonDChEZB7pzZxRNp/bt+ymiy9/npwXya9KH99nJ/GXFIiUkYGFQ==
   dependencies:
     ansi-escapes "^4.2.1"
-    supports-hyperlinks "^2.0.0"
+    supports-hyperlink "^2.0.0"
 
 terser-webpack-plugin@^5.2.5, terser-webpack-plugin@^5.3.10:
   version "5.3.10"

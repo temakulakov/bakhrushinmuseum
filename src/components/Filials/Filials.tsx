@@ -9,22 +9,22 @@ import dop2 from './static/filials/meirhold_dop.png'
 import dop3 from './static/filials/mironova_dop.png'
 
 const types: IEntity[] = [
-    { id: 0, title: "Бахрушинский квартал", links: "" },
-    { id: 1, title: "Филиалы", links: "" },
+    { id: 0, title: "Бахрушинский квартал", link: "" },
+    { id: 1, title: "Филиалы", link: "" },
 ];
 
 const data: IFilials[] = [
-    { id: 0, title: "Квартал 1", imageUrl: "https://placehold.jp/600x600.png", imageAddUrl: dop1, position: "Адрес квартала 1", links: "/", type: "quarter", backgroundColor: 'rgb(255,255,255)'},
-    { id: 1, title: "Квартал 2", imageUrl: "https://placehold.jp/600x600.png", imageAddUrl: dop1, position: "Адрес квартала 2", links: "/", type: "quarter", backgroundColor: 'rgb(255,255,255)'},
-    { id: 2, title: "Квартал 3", imageUrl: "https://placehold.jp/600x600.png", imageAddUrl: dop1, position: "Адрес квартала 3", links: "/", type: "quarter", backgroundColor: 'rgb(255,255,255)'},
-    { id: 3, title: "Квартал 4", imageUrl: "https://placehold.jp/600x600.png", imageAddUrl: dop1, position: "Адрес квартала 4", links: "/", type: "quarter", backgroundColor: 'rgb(255,255,255)'},
-    { id: 4, title: "Квартал 5", imageUrl: "https://placehold.jp/600x600.png", imageAddUrl: dop1, position: "Адрес квартала 5", links: "/", type: "quarter", backgroundColor: 'rgb(255,255,255)'},
-    { id: 5, title: "Дом-музей Ермоловой", imageUrl: "https://gctm.ru/img/ermolova.jpg", imageAddUrl: dop1, position: "Адрес Филиала 6", links: "/", type: "filial", backgroundColor: 'rgb(187, 133, 171)'},
-    { id: 6, title: "Музей-квартира мейерхольда", imageUrl: "https://gctm.ru/img/meirhold.jpg", imageAddUrl: dop2, position: "Адрес Филиала 7", links: "/", type: "filial", backgroundColor: 'rgb(225, 8, 0)'},
-    { id: 7, title: "Музей-квартира мироновы-менкареа", imageUrl: "https://gctm.ru/img/mironova.jpg", imageAddUrl: dop3, position: "Адрес Филиала 8", links: "/", type: "filial", backgroundColor: 'rgb(224, 192, 159)'},
-    { id: 8, title: "Филиал 5", imageUrl: "https://placehold.jp/600x600.png", imageAddUrl: dop1, position: "Адрес Филиала 9", links: "/", type: "filial", backgroundColor: 'rgb(255,255,255)'},
-    { id: 9, title: "Филиал 5", imageUrl: "https://placehold.jp/600x600.png", imageAddUrl: dop1, position: "Адрес квартала 10", links: "/", type: "filial", backgroundColor: 'rgb(255,255,255)'},
-    { id: 10, title: "Квартал 5", imageUrl: "https://placehold.jp/600x600.png", imageAddUrl: dop1, position: "Адрес квартала 11", links: "/", type: "quarter", backgroundColor: 'rgb(255,255,255)'},
+    { id: 0, title: "Квартал 1", imageUrl: "https://placehold.jp/600x600.png", imageAddUrl: dop1, position: "Адрес квартала 1", link: "/", type: "quarter", backgroundColor: 'rgb(255,255,255)'},
+    { id: 1, title: "Квартал 2", imageUrl: "https://placehold.jp/600x600.png", imageAddUrl: dop1, position: "Адрес квартала 2", link: "/", type: "quarter", backgroundColor: 'rgb(255,255,255)'},
+    { id: 2, title: "Квартал 3", imageUrl: "https://placehold.jp/600x600.png", imageAddUrl: dop1, position: "Адрес квартала 3", link: "/", type: "quarter", backgroundColor: 'rgb(255,255,255)'},
+    { id: 3, title: "Квартал 4", imageUrl: "https://placehold.jp/600x600.png", imageAddUrl: dop1, position: "Адрес квартала 4", link: "/", type: "quarter", backgroundColor: 'rgb(255,255,255)'},
+    { id: 4, title: "Квартал 5", imageUrl: "https://placehold.jp/600x600.png", imageAddUrl: dop1, position: "Адрес квартала 5", link: "/", type: "quarter", backgroundColor: 'rgb(255,255,255)'},
+    { id: 5, title: "Дом-музей Ермоловой", imageUrl: "https://gctm.ru/img/ermolova.jpg", imageAddUrl: dop1, position: "Адрес Филиала 6", link: "/", type: "filial", backgroundColor: 'rgb(187, 133, 171)'},
+    { id: 6, title: "Музей-квартира мейерхольда", imageUrl: "https://gctm.ru/img/meirhold.jpg", imageAddUrl: dop2, position: "Адрес Филиала 7", link: "/", type: "filial", backgroundColor: 'rgb(225, 8, 0)'},
+    { id: 7, title: "Музей-квартира мироновы-менкареа", imageUrl: "https://gctm.ru/img/mironova.jpg", imageAddUrl: dop3, position: "Адрес Филиала 8", link: "/", type: "filial", backgroundColor: 'rgb(224, 192, 159)'},
+    { id: 8, title: "Филиал 5", imageUrl: "https://placehold.jp/600x600.png", imageAddUrl: dop1, position: "Адрес Филиала 9", link: "/", type: "filial", backgroundColor: 'rgb(255,255,255)'},
+    { id: 9, title: "Филиал 5", imageUrl: "https://placehold.jp/600x600.png", imageAddUrl: dop1, position: "Адрес квартала 10", link: "/", type: "filial", backgroundColor: 'rgb(255,255,255)'},
+    { id: 10, title: "Квартал 5", imageUrl: "https://placehold.jp/600x600.png", imageAddUrl: dop1, position: "Адрес квартала 11", link: "/", type: "quarter", backgroundColor: 'rgb(255,255,255)'},
 ];
 
 const Filials = () => {
