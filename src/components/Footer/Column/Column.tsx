@@ -11,7 +11,7 @@ const Column = ({ column }: ColumnProps) => {
             <div>
                 <h1>{column.title}</h1>
                 <div className={styles.body}>
-                    {column.links.map((link, index) => <a href={`/${link.src}`} key={index}>{link.title}</a>)}
+                    {column.link.map((link, index) => <a href={`/${link.src}`} key={index}>{link.title}</a>)}
                 </div>
             </div>
             <div className={styles.bottom}>

@@ -1,7 +1,7 @@
 .root {
   width: 100%;
-  height: 100vh;
-  background: black;
+  height: 70vh;
+  background: #54565A;
   max-width: 2400px !important;
   overflow: hidden;
 
@@ -13,6 +13,8 @@
 }
 
 .controlsLeft {
+
+
   z-index: 111;
   position: absolute;
   height: 50px;
@@ -50,6 +52,7 @@
 
     top: 50%;
 
+
     transition: background-color .3s ease;
   }
 
@@ -63,6 +66,7 @@
 }
 
 .loader {
+
   z-index: 111;
   position: absolute;
   margin-right: auto;
@@ -75,6 +79,8 @@
   bottom: 10%;
   border-radius: 2px;
   background-color: white;
+
+
 }
 
 .indicators {
@@ -114,8 +120,13 @@
 }
 
 .imageContainer {
-  width: 100%;
-  height: 100vh;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  //height: 100vh;
+  height: 71vh;
   overflow: hidden;
   position: absolute;
   top: 0;

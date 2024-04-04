@@ -8,7 +8,7 @@ const Layout = () => (
     <>
         <Header/>
         <Slider/>
-        <main>
+        <main style={{ width: '90%', margin: '0 auto'}}>
             <Outlet /> {/* Здесь будут отображаться страницы в зависимости от маршрута */}
         </main>
         <Footer/>

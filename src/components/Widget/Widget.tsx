@@ -5,13 +5,13 @@ import { motion } from 'framer-motion';
 import {getTextColorBasedOnBgColor} from "../../helpers/getTextColorBasedOnBgColor";
 
 const slides: IWidget[] = [
-    { id: 0, title: "Виджет 1", imageUrl: "https://placehold.jp/916x860.png", links: "/", type: "Про", description: "Сегодня в фондах музея представлено более 1,5 млн. экспонатов. Это эскизы декораций, фотографии, костюмы актёров и многое другое", backgroundColor: "rgba(245,233,188,0.99)", buttonText: "Расмотреть далее"},
-    { id: 1, title: "Виджет 2", imageUrl: "https://placehold.jp/916x860.png", links: "/", type: "Про", description: "Историческое здание флигеля стало детским досуговым центром с театральной студией. Здесь дети разных возрастов смогут получить навыки по актерскому мастер- ству, вокалу, танцу, игре на музыкальных инструментах.", backgroundColor: "rgba(138,101,182,0.98)", buttonText: "Расмотреть далее"},
-    { id: 2, title: "Виджет 3", imageUrl: "https://placehold.jp/916x860.png", links: "/", type: "Про", description: "Описание виджета 3", backgroundColor: "rgba(82,194,204,0.98)", buttonText: "Расмотреть далее"},
-    { id: 3, title: "Виджет 4", imageUrl: "https://placehold.jp/916x860.png", links: "/", type: "Про", description: "Описание виджета 4", backgroundColor: "rgba(96,222,107,0.97)", buttonText: "Расмотреть далее"},
-    { id: 4, title: "Виджет 5", imageUrl: "https://placehold.jp/916x860.png", links: "/", type: "Про", description: "Описание виджета 5", backgroundColor: "rgba(234,149,61,0.99)", buttonText: "Расмотреть далее"},
-    { id: 5, title: "Виджет 6", imageUrl: "https://placehold.jp/916x860.png", links: "/", type: "Про", description: "Описание виджета 6", backgroundColor: "rgba(203,224,50,0.97)", buttonText: "Расмотреть далее"},
-    { id: 6, title: "Виджет 7", imageUrl: "https://placehold.jp/916x860.png", links: "/", type: "Про", description: "Описание виджета 7", backgroundColor: "rgba(194,172,89,0.96)", buttonText: "Расмотреть далее"},
+    { id: 0, title: "Виджет 1", imageUrl: "https://placehold.jp/916x860.png", link: "/", type: "Про", description: "Сегодня в фондах музея представлено более 1,5 млн. экспонатов. Это эскизы декораций, фотографии, костюмы актёров и многое другое", backgroundColor: "rgba(245,233,188,0.99)", buttonText: "Расмотреть далее"},
+    { id: 1, title: "Виджет 2", imageUrl: "https://placehold.jp/916x860.png", link: "/", type: "Про", description: "Историческое здание флигеля стало детским досуговым центром с театральной студией. Здесь дети разных возрастов смогут получить навыки по актерскому мастер- ству, вокалу, танцу, игре на музыкальных инструментах.", backgroundColor: "rgba(138,101,182,0.98)", buttonText: "Расмотреть далее"},
+    { id: 2, title: "Виджет 3", imageUrl: "https://placehold.jp/916x860.png", link: "/", type: "Про", description: "Описание виджета 3", backgroundColor: "rgba(82,194,204,0.98)", buttonText: "Расмотреть далее"},
+    { id: 3, title: "Виджет 4", imageUrl: "https://placehold.jp/916x860.png", link: "/", type: "Про", description: "Описание виджета 4", backgroundColor: "rgba(96,222,107,0.97)", buttonText: "Расмотреть далее"},
+    { id: 4, title: "Виджет 5", imageUrl: "https://placehold.jp/916x860.png", link: "/", type: "Про", description: "Описание виджета 5", backgroundColor: "rgba(234,149,61,0.99)", buttonText: "Расмотреть далее"},
+    { id: 5, title: "Виджет 6", imageUrl: "https://placehold.jp/916x860.png", link: "/", type: "Про", description: "Описание виджета 6", backgroundColor: "rgba(203,224,50,0.97)", buttonText: "Расмотреть далее"},
+    { id: 6, title: "Виджет 7", imageUrl: "https://placehold.jp/916x860.png", link: "/", type: "Про", description: "Описание виджета 7", backgroundColor: "rgba(194,172,89,0.96)", buttonText: "Расмотреть далее"},
 ];
 
 const Widget = () => {

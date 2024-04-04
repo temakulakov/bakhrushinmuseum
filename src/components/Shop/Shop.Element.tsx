@@ -10,11 +10,11 @@ interface IProps {
 const ShopElement: React.FC<IProps> = ({ item }) => {
     const cardX = useMotionValue(0);
     const cardY = useMotionValue(0);
-    const rotateX = useTransform(cardY, [-300, 300], [10, -10]);
-    const rotateY = useTransform(cardX, [-300, 300], [-10, 10]);
+    const rotateX = useTransform(cardY, [-150, 150], [10, -10]);
+    const rotateY = useTransform(cardX, [-150, 150], [-10, 10]);
     const cardStyle: MotionStyle = {
-        rotateX: useTransform(cardY, [-300, 300], [25, -25]),
-        rotateY: useTransform(cardX, [-300, 300], [-25, 25]),
+        rotateX: useTransform(cardY, [-150, 150], [25, -25]),
+        rotateY: useTransform(cardX, [-150, 150], [-25, 25]),
         boxShadow: "0px 0px 30px -7px rgba(0,0,0,0.45)",
         borderRadius: '3px',
         backgroundColor: "white",
@@ -27,15 +27,18 @@ const ShopElement: React.FC<IProps> = ({ item }) => {
         perspective: 800
     };
 
+    const imageX = useTransform(cardX, [-150, 150], [-10, 10]);
+    const imageY = useTransform(cardY, [-150, 150], [-10, 10]);
+
     const imageStyle: MotionStyle = {
+        x: imageX, // Используем для горизонтального перемещения
+        y: imageY, // Используем для вертикального перемещения
         borderRadius: '3px',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         transformStyle: "preserve-3d",
         perspective: 1100,
-        rotateX: useTransform(cardY, [-500, 500], [45, -45]),
-        rotateY: useTransform(cardX, [-500, 500], [-45, 45])
     };
 
     const handleMouseMove = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {

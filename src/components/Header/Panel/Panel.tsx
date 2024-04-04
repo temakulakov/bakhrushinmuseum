@@ -15,8 +15,8 @@ const Panel = ({ panel }: Props) => {
     const [ activeDescription, setActiveDescription ] = useState<IHeaderColumn>(panel);
     useEffect(() => {
         setActiveDescription(panel);
-        if (panel && panel.links && panel.links.length > 1) {
-            setActiveElement(panel.links[0]);
+        if (panel && panel.link && panel.link.length > 1) {
+            setActiveElement(panel.link[0]);
         }
     }, [panel]);
     return <motion.div className={styles.wrapper}
@@ -26,14 +26,14 @@ const Panel = ({ panel }: Props) => {
     >
         <AnimatePresence>
             {
-                panel && panel?.links && <motion.div
+                panel && panel?.link && <motion.div
                     key={panel.head.title}
 
                     className={styles.container}
                 >
                     <div className={styles.columnFirst}>
                         <AnimatePresence>
-                            {panel.links.map((item, index) => {
+                            {panel.link.map((item, index) => {
                                 return <motion.a key={index}
                                                  initial={{opacity: 0}}
                                                  animate={{opacity: 1}}
@@ -43,7 +43,7 @@ const Panel = ({ panel }: Props) => {
                                                      setActiveElement(item);
                                                      setActiveDescription(item)
                                                  }}>
-                                    {item.head.title}{item.links &&
+                                    {item.head.title}{item.link &&
                                     <img style={{transform: 'rotate(-90deg)'}} src={arrow}/>}
                                 </motion.a>
                             })}
@@ -62,9 +62,9 @@ const Panel = ({ panel }: Props) => {
                                 exit={{opacity: 0, y: 10}}
                             >
                                 {
-                                    activeElement && activeElement.links && <AnimatePresence>
+                                    activeElement && activeElement.link && <AnimatePresence>
                                         {
-                                            activeElement.links.map((item, index) =>
+                                            activeElement.link.map((item, index) =>
                                                 <a href={item.head.src}
                                                    key={index}
                                                    onMouseEnter={() => {

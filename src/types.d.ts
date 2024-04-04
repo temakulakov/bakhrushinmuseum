@@ -13,13 +13,13 @@ interface IHeaderLink {
 
 interface IFooterColumns {
     title: string;
-    links: ILink[];
+    link: ILink[];
     elements?: React.ReactNode[];
 };
 
 interface IHeaderColumn {
     head: IHeaderLink;
-    links?: IHeaderColumn[];
+    link?: IHeaderColumn[];
 };
 
 interface ISlide {
@@ -31,7 +31,7 @@ interface ISlide {
 interface IEntity {
     id: number;
     title: string;
-    links: string;
+    link: string;
 }
 
 // События
